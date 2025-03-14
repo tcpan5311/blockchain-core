@@ -1,0 +1,11 @@
+
+0x170E0Ad587b1fD26F2b0EA31f322945443e5b38D
+0x119fbDcd822593674e961834a83df99dB595C411
+
+go build -o blockchain
+
+./blockchain createblockchain -address Ivan
+./blockchain getbalance -address Ivan
+./blockchain send -from Ivan -to Pedro -amount 6 -stake 52
+./blockchain printchain -
+
