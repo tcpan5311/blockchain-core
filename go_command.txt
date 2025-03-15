@@ -4,8 +4,14 @@
 
 go build -o blockchain
 
-./blockchain createblockchain -address Ivan
-./blockchain getbalance -address Ivan
-./blockchain send -from Ivan -to Pedro -amount 6 -stake 52
+./blockchain createwallet
+./blockchain createwallet
+
+./blockchain createblockchain -address wallet_1_address
+./blockchain send -from 1CRPULK9jwgUktUaPzsXeunbb4AK3T73TF -to 17RdhKba6RrUWquEQzuDQd6x2znCiMFf7k -amount 6 -stake 51
+
+./blockchain getbalance -address wallet_1_address
+./blockchain getbalance -address wallet_2_address
 ./blockchain printchain -
+
 
