@@ -1,11 +1,12 @@
 package main
+
 import (
 	"fmt"
 	"strconv"
 )
 
 func (cli *CLI) printChain() {
-	bc := NewBlockchain("")
+	bc := NewBlockchain()
 	defer bc.db.Close()
 
 	bci := bc.Iterator()
